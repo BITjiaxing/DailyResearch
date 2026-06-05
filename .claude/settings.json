@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:ieeexplore.ieee.org)",
+      "WebFetch(domain:sciencedirect.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:paperswithcode.com)",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:patents.google.com)",
+      "Bash(python scripts/*:*)"
+    ]
+  }
+}

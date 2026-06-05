@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+
+# Output reports (optional - 如果希望分享历史报告则注释此行)
+# output/
+
+# Environment & secrets
+.env
+.env.local
+ANTHROPIC_API_KEY
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Claude Code - local user settings (each user has their own)
+.claude/settings.local.json
+.claude/worktrees/
