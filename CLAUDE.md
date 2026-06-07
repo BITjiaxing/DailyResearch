@@ -1,6 +1,6 @@
 # DailyResearch - 科研热点追踪智能体
 
-> **首次使用？** 请阅读 [README.md](README.md) 的「适配你的研究方向」章节，修改 `config/topics.json` 和本文件的「关联项目」部分。
+> **首次使用？** 请阅读 [README.md](README.md) 了解如何配置 AI 工具和适配研究方向。
 
 ## 项目身份
 
