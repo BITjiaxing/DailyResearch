@@ -28,6 +28,8 @@ ANTHROPIC_API_KEY
 Thumbs.db
 Desktop.ini
 
-# Claude Code - local user settings (each user has their own)
+# Claude Code / Codex - local artifacts
 .claude/settings.local.json
 .claude/worktrees/
+.codex
+AGENTS.md
