@@ -49,6 +49,55 @@ python scripts/research_agent.py validate
 
 ---
 
+## 适配你的研究方向（给课题组师兄弟）
+
+本项目默认追踪的是 **强化学习 + 无人机** 交叉方向。如果你研究的是其他方向，需要改两个文件：
+
+### 第一步：修改研究主题 `config/topics.json`
+
+这个文件定义了"搜什么"。每个领域包含：
+
+```json
+{
+  "name": "强化学习算法",          // 领域名称
+  "keywords": ["reinforcement learning", "PPO", "SAC", ...],  // 搜索关键词（英文为主）
+  "focus": ["算法创新", "样本效率", ...],                    // 重点关注
+  "conferences": ["NeurIPS", "ICML", ...],                   // 顶会
+  "journals": ["JMLR", "Artificial Intelligence", ...]       // 顶刊
+}
+```
+
+**怎么改：**
+- 删掉不相关的领域，换成你自己的方向。比如做 CV 的改成目标检测、图像分割、3D 视觉等
+- `keywords` 用英文（搜索覆盖面广），中英文混合也可以
+- `conferences` 和 `journals` 填你领域的顶会顶刊
+
+改完后运行验证：
+```bash
+python scripts/research_agent.py validate
+```
+
+> **搜索查询会自动适配**：脚本会根据你填的 keywords、conferences、journals 自动生成 arXiv 和期刊两类搜索查询。
+
+### 第二步：修改关联项目 `CLAUDE.md`
+
+打开 `CLAUDE.md`，找到最前面的这几行：
+
+```
+## 关联项目
+- **xmd_rl** — 四旋翼强化学习任务包（基于 Isaac Lab / RSL-RL）
+- **PX4-Autopilot** — 开源飞控系统
+- ...
+```
+
+替换成你自己的项目。这个信息会影响报告中的"与本课题关联分析"和"研究 Idea"部分——Claude 会把搜到的新论文和你的项目做关联。
+
+### 如果你不做这两个修改
+
+师兄弟 clone 下来直接用，报告分析的还是 RL + 无人机的热点。**他们必须改 `topics.json` 和 `CLAUDE.md` 的关联项目**才能适配自己的方向。
+
+---
+
 ## 快速开始
 
 ### 1. 配置
