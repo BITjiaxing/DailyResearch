@@ -7,8 +7,9 @@ __pycache__/
 logs/
 *.log
 
-# Output reports (optional - 如果希望分享历史报告则注释此行)
-# output/
+# Output reports (历史报告不上传，仅保留样本)
+output/*
+!output/sample_report.md
 
 # Environment & secrets
 .env
