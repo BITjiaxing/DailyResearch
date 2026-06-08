@@ -21,7 +21,6 @@
 ```bash
 git clone https://github.com/BITjiaxing/DailyResearch.git
 cd DailyResearch
-pip install -r requirements.txt
 python scripts/research_agent.py validate
 ```
 
@@ -168,12 +167,6 @@ DailyResearch/
 │   └── run_daily.ps1      # Windows PowerShell 启动脚本
 └── output/                # 报告输出目录
 ```
-
-## 依赖
-
-- Python 3.8+
-- 任一支持的 AI 工具（Claude Code / Codex / cc-switch 等）
-- 对应后端的 API Key 或订阅
 
 ## 平台
 

@@ -1,4 +1,0 @@
-# DailyResearch 依赖
-# 安装: pip install -r requirements.txt
-
-anthropic>=0.40.0
